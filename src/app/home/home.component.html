@@ -1,0 +1,33 @@
+<p>home works!</p>
+ name:{{a}}<br>
+
+ number:{{c}}<br>
+ <input type="test" [(ngModel)] ="name">
+ <input type="button" value="click" (click)="printdata($event)">
+ <br>
+ <span *ngIf="status else condition1">this is true</span>
+ <ng-template #condition1> this is false </ng-template>
+ <br>
+
+{{mobiles[0]}}
+{{mobiles[1]}}
+{{mobiles[2]}}
+<div *ngFor='let mobile of mobiles'>{{mobile}}</div>
+
+
+ pipes;
+ uppercase:{{name1|uppercase}}
+ lowercase:{{name1|lowercase}}
+ date:{{todaydate}}
+ <input type="button" value="click" (click)="getdata()">
+ <br>
+ <br>
+ 
+<input type="button" value="userclick" (click)="getalluserinformation()">
+<table border="2">
+    <tr *ngFor="let user of user">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+    </tr>
+</table>
